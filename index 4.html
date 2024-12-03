@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجري الإلكتروني</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="#">متجر العروض</a></div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#about">معلومات عنا</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <h1>أفضل العروض في متناول يدك!</h1>
+        <p>تسوق عبر الإنترنت لأفضل المنتجات بأسعار رائعة.</p>
+        <a href="#products" class="cta-btn">تسوق الآن</a>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>منتجاتنا المميزة</h2>
+        <div class="product-grid">
+            <!-- Example of product -->
+            <div class="product-card">
+                <img src="product1.jpg" alt="منتج 1">
+                <h3>منتج 1</h3>
+                <p>وصف المنتج 1</p>
+                <a href="affiliate_link" class="btn">عرض المزيد</a>
+            </div>
+
+            <!-- Repeat the product card for more products -->
+            <div class="product-card">
+                <img src="product2.jpg" alt="منتج 2">
+                <h3>منتج 2</h3>
+                <p>وصف المنتج 2</p>
+                <a href="affiliate_link" class="btn">عرض المزيد</a>
+            </div>
+
+            <!-- Add more product cards as necessary -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>من نحن</h2>
+        <p>نحن متخصصون في تقديم أفضل العروض على الإنترنت لعملائنا عبر روابط الأفلييت. نحن هنا لمساعدتك في الحصول على أفضل الصفقات!</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>اتصل بنا</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 متجر العروض - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
